@@ -13,4 +13,4 @@ async def on_ready() -> None:
 
 
 if __name__ == "__main__":
-    bot.run(os.environ["BOT_TOKEN"])
+    bot.run("MTE5MDc0Mzk4MDYyNzk5MjY1Ng.G5zgCj.RnBuF2hNrjSbhgWVJ5pcdO7b4490xtxMJgEcrw")

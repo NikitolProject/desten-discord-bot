@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "desten-discord-bot"
+version = "0.1.0"
+description = ""
+authors = ["Nikita Tolstov <tolnikita556@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+discord-py = "^2.3.2"
+bson = "^0.5.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

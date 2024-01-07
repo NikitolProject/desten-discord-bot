@@ -35,5 +35,16 @@ class Confirm(discord.ui.View):
             ephemeral=True
         )
 
-        channel = await bot.fetch_channel("1096483794543972443")
-        await channel.send(f"@here\nИгрок {interaction.user.mention} хочет стать жителем города!")
+        channel = await bot.fetch_channel("982240175495184445")
+        guild_roles = await channel.guild.fetch_roles()
+        current_role = None
+
+        for role in guild_roles:
+            if role.id != 982230828731994142:
+                continue
+            current_role = role
+
+        if current_role is None:
+            return await channel.send(f"@here\nИгрок {interaction.user.mention} хочет стать жителем города!")
+        
+        await channel.send(f"{current_role.mention}\nИгрок {interaction.user.mention} хочет стать жителем города!")
